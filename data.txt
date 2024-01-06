@@ -1,0 +1,1 @@
+[{"username":"maya123","email":"maya@gmail.com","password":"$2b$10$6xwwABTqGXKdbJUGcYiphePqsToOy6L/NIb/bD2EtTUyK84uiBr2K"},{"username":"priyanshu","email":"priyanshu@yahoo.com","password":"$2b$10$3d/U9tiTqv4AvTUvVUUPlOpvh7qb1PPHcYpZ/TrcAlkmiQYTz.Cr."}]
