@@ -12,7 +12,7 @@ const Home = () => {
       window.location.href=`window.location.origin`
     }
     if(!user){
-      navigate(`window.location.origin`)
+       window.location.href=`window.location.origin`
     }
     else{
   return (
