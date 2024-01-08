@@ -1,18 +1,22 @@
-import  { useEffect } from 'react'
+import  { useEffect,useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 const Home = () => {
-   const navigate=useNavigate()
-    const user=localStorage.getItem('loggedin')
-    const email=localStorage.getItem('email')
-    const username=localStorage.getItem('username')
+    const [login,setLogin]=useState(true)
+    const navigate=useNavigate()
+    let user=localStorage.getItem('loggedin')
+    let email=localStorage.getItem('email')
+    let username=localStorage.getItem('username')
 
-    
+    if(!user){
+       setLogin(false)
+    }
     const logout=()=>{
       localStorage.clear()
       navigate('/')
     }
    
-   user?
+   
+   login?
    (
     <div className='p-3'>
      <h2>Welcome {username}</h2> 
