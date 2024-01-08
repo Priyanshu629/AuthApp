@@ -19,7 +19,7 @@ const Home = () => {
      <h2>Your Email:{email}</h2>
      <button className='btn btn-danger' onClick={logout}>Logout</button>
     </div>
-  ) : navigate('/')
+  ) : window.location.href='/'
     
 }
 
