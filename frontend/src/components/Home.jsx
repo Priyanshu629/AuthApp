@@ -9,10 +9,10 @@ const Home = () => {
     
     const logout=()=>{
       localStorage.clear()
-      window.location.href=`window.location.origin`
+      navigate('/')
     }
     if(!user){
-       navigate('/')
+     return   navigate('/')
     }
     
   return (
