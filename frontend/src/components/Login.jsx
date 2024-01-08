@@ -25,7 +25,9 @@ const Login = () => {
        
       }
        
-    }).catch(err=> err)
+    }).catch((error)=>{
+      if(error.response && error.response.status === 422) alert('Invalid username or password')
+    })
     
   };
 
