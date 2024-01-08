@@ -12,9 +12,9 @@ const Home = () => {
       window.location.href=`window.location.origin`
     }
     if(!user){
-       window.location.href=`window.location.origin`
+       navigate('/')
     }
-    else{
+    
   return (
     <div className='p-3'>
      <h2>Welcome {username}</h2> 
@@ -22,7 +22,7 @@ const Home = () => {
      <button className='btn btn-danger' onClick={logout}>Logout</button>
     </div>
   )
-    }
+    
 }
 
 export default Home
