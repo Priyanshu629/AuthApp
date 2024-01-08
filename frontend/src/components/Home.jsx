@@ -11,17 +11,15 @@ const Home = () => {
       localStorage.clear()
       navigate('/')
     }
-    if(!user){
-     return   navigate('/')
-    }
-    
-  return (
+   
+   user?
+   (
     <div className='p-3'>
      <h2>Welcome {username}</h2> 
      <h2>Your Email:{email}</h2>
      <button className='btn btn-danger' onClick={logout}>Logout</button>
     </div>
-  )
+  ) : navigate('/')
     
 }
 
